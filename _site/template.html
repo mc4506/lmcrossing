@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=ZCOOL+KuaiLe&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./template.css">
+</head>
+
+<body class="container-md">
+
+
+    <header class="row header-img my-4">
+        <!-- heading -->
+        <div class="col col-8">
+            <h1>l+m Crossing</h1>
+            <ul class="mugshot-row">
+                <li class="d-inline">
+                    <img class="mugshot" src="assets/icons/lily450x450.png" alt="lily">
+                </li>
+                <li class="d-inline">
+                    <img class="mugshot" src="assets/icons/mike450x450.png" alt="mike">
+
+                </li>
+                <li class="d-inline">
+                    <img class="mugshot" src="assets/icons/ethan450x450.png" alt="ethan">
+
+                </li>
+                <li class="d-inline">
+                    <img class="mugshot" src="assets/icons/max450x450.png" alt="max">
+
+                </li>
+            </ul>
+            
+        </div>
+
+        <!-- empty div -->
+        <div class="col"></div>
+
+        <!-- navigation menu for small screens. shows a hamburger menu-->
+        <div class="col d-sm-none" role="navigation">
+            <ul class="nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"
+                            width="24px" height="24px">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Posts</a>
+                        <a class="dropdown-item" href="#">About</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Regular navigation menu for medium to large screens-->
+        <div class="col d-none d-sm-block">
+            <ul class="nav" role="navigation">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="row bulletin-bg">
+            <div class="col col-12">
+
+            </div>
+
+        </div>
+        {{ content }}
+    </main>
+
+
+
+
+
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
